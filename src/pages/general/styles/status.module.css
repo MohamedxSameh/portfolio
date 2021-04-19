@@ -1,0 +1,49 @@
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  right: 20px;
+  bottom: 70px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.green {
+  background-color: #1cc900;
+  animation: glowGreen 2s linear infinite;
+}
+.red {
+  background-color: red;
+  animation: glowRed 2s linear infinite;
+}
+.text {
+  color: white;
+  text-transform: capitalize;
+}
+@keyframes glowGreen {
+  0% {
+    box-shadow: 0 0 8px #1cc900;
+  }
+  50% {
+    box-shadow: 0 0 16px #1cc900;
+  }
+  100% {
+    box-shadow: 0 0 8px #1cc900;
+  }
+}
+@keyframes glowRed {
+  0% {
+    box-shadow: 0 0 8px red;
+  }
+  50% {
+    box-shadow: 0 0 16px red;
+  }
+  100% {
+    box-shadow: 0 0 8px red;
+  }
+}

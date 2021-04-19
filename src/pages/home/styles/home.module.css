@@ -1,0 +1,42 @@
+.home {
+  width: 100%;
+  height: calc(100vh - 62px);
+  margin-top: 62px;
+  background-color: #0a0a0a;
+}
+.main {
+  margin-left: 10px;
+}
+.name {
+  text-transform: uppercase;
+  color: #f30072;
+  font-weight: bold;
+  font-family: 'Open Sans';
+  font-size: 5rem;
+}
+.para {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.svg {
+  width: 50px;
+  animation: downArrow 1.5s infinite;
+}
+@keyframes downArrow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,29 @@
+.para {
+  color: white;
+  margin: 20px 0 0 20px;
+  font-size: 2rem;
+  width: 600px;
+  line-height: 35px;
+}
+.para2 {
+  margin-bottom: 40px;
+}
+.grad,
+.location {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.gradIcon,
+.location-icon {
+  color: #38ed94;
+  margin-right: 10px;
+  font-size: 2rem;
+  width: 20px;
+}
+.text {
+  color: white;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}

@@ -1,0 +1,8 @@
+// GENERAL IMPORTS
+@import './variables';
+@import './mixins';
+@import './reset';
+@import './typography';
+
+// PAGES IMPORTS
+@import '../pages/home/Home.sass';

@@ -1,0 +1,31 @@
+.social-bar {
+  width: fit-content;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 125px);
+}
+.social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+.social-icon {
+  color: #575757;
+}
+.social-icon:hover {
+  cursor: pointer;
+}
+.fb:hover {
+  color: #3b5998;
+}
+.ig:hover {
+  color: #e1306c;
+}
+.tw:hover {
+  color: #1da1f2;
+}
+.gh:hover {
+  color: white;
+}
