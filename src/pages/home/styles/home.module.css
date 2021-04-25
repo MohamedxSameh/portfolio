@@ -1,24 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .home {
   width: 100%;
-  height: calc(100vh - 62px);
-  margin-top: 62px;
-  background-color: #0a0a0a;
-}
-.main {
-  margin-left: 10px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .name {
   text-transform: uppercase;
   color: #f30072;
   font-weight: bold;
   font-family: 'Open Sans';
-  font-size: 5rem;
+  font-size: 4.5rem;
+  display: block;
 }
 .para {
   color: white;
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 .down-arrow {
   position: absolute;

@@ -1,22 +1,21 @@
-.header {
-}
 .navbar {
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #0a0a0a;
+  /* background-color: #0a0a0a; */
   color: #575757;
   padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(100%, 600px);
+  width: min(100%, 700px);
 }
 .list-item {
   font-size: 1.8rem;

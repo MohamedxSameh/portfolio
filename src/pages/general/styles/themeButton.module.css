@@ -1,0 +1,54 @@
+.box {
+  position: fixed;
+  top: 16px;
+  right: 10px;
+  z-index: 101;
+  width: 70px;
+  height: 30px;
+  border-radius: 40px;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box:hover .circle {
+  cursor: pointer;
+}
+.circle {
+  border: 3px solid white;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  left: 7px;
+  position: absolute;
+}
+.moon-icon {
+  margin-right: 8px;
+  height: 18px;
+}
+.box:hover .moon-icon {
+  animation: rotate 1s linear;
+}
+.sun-icon {
+  margin-left: 10px;
+}
+.box:hover .sun-icon {
+  animation: rotate 2s linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
