@@ -1,36 +1,24 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import Status from '../general/Status';
 import Hello from './Hello';
 import styles from './styles/home.module.css';
 function Home() {
+  const { colors } = useContext(ThemeContext);
   return (
-    <div className={styles['home']}>
-      <Hello />
-      <main className={styles['main']}>
-        <span className={styles['name']}> i'm mohamed sameh</span>
-        <p className={styles['para']}>
-          front end web developer <br /> & <br /> desginer
-        </p>
-      </main>
-      <div className={styles['down-arrow']}>
-        <svg
-          width="68"
-          height="45"
-          className={styles['svg']}
-          viewBox="0 0 68 45"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M58.4382 3.62972C60.1279 1.86823 62.8627 1.86823 64.5495 3.62972C66.2369 5.3912 66.2369 8.24805 64.5495 10.0092L33.9998 41.908L3.45012 10.0095C1.76272 8.24805 1.76272 5.39185 3.45012 3.63004C5.13752 1.86856 7.87176 1.86856 9.55916 3.63004L33.9998 29.1487L58.4382 3.62972Z"
-            fill="white"
-          />
-          <path
-            d="M68 6.81997C68 8.52764 67.3774 10.2337 66.1323 11.5334L35.5823 43.4315C35.1689 43.8633 34.5972 44.1079 34 44.1079C33.4025 44.1079 32.831 43.8633 32.4174 43.4315L1.86767 11.5318C-0.622291 8.93627 -0.622613 4.70626 1.86703 2.10658C3.10124 0.817533 4.74847 0.108553 6.50497 0.108553C8.26148 0.108553 9.90806 0.817532 11.1416 2.10658L33.9997 25.973L56.8551 2.10593C56.8558 2.10593 56.8561 2.10368 56.8567 2.10368C58.0916 0.816563 59.7398 0.107906 61.4969 0.107906C63.2528 0.107906 64.899 0.816881 66.132 2.10593C67.3774 3.40625 68 5.11231 68 6.81997ZM34 38.7329L62.9677 8.48542C63.8339 7.58083 63.831 6.05331 62.967 5.15292C62.5688 4.73816 62.0462 4.50839 61.4953 4.50839C60.9434 4.50839 60.4195 4.73816 60.0197 5.15517L35.5829 30.6715C35.1686 31.1034 34.5972 31.348 34 31.348C33.4025 31.348 32.831 31.1034 32.4174 30.6715L7.97607 5.15292C7.5772 4.73817 7.05523 4.50839 6.50433 4.50839C5.95311 4.50839 5.43018 4.73817 5.03163 5.15292C4.16864 6.05751 4.16479 7.58277 5.03099 8.48317L34 38.7329Z"
-            fill="white"
-          />
-        </svg>
+    <div className={styles['container']}>
+      <div className={styles['home']}>
+        <Hello />
+        <main className={styles['main']}>
+          <span className={styles['name']} style={{ color: colors.header }}>
+            i'm mohamed sameh
+          </span>
+          <p className={styles['para']} style={{ color: colors.font }}>
+            a front end web developer <br /> & <br /> desginer
+          </p>
+          <Status />
+        </main>
       </div>
-      <Status />
     </div>
   );
 }

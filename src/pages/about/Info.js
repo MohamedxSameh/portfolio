@@ -1,7 +1,10 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import styles from './styles/info.module.css';
 function Info() {
+  const { colors } = useContext(ThemeContext);
   return (
-    <div>
+    <div style={{ color: colors.font }}>
       <p className={styles['para']}>
         My name is Mohamed Sameh, I’m 22 years old Software Engineer and
         Front-End Web Developer based in Egypt specialized in Designing and

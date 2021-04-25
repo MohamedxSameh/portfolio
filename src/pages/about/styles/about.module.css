@@ -1,22 +1,15 @@
 .about {
-  height: calc(100vh - 62px);
-  background-color: #0a0a0a;
-  margin-top: 62px;
   width: 100%;
+  margin-top: 60px;
 }
 .title {
-  color: #f30072;
+  color: #212121;
+  text-transform: uppercase;
+  font-size: clamp(60px, 7vw, 200px);
+  letter-spacing: 5px;
+}
+.text {
   text-transform: uppercase;
   margin: 20px 0 0 20px;
   display: inline-block;
-}
-
-.footer {
-  color: #212121;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  font-size: clamp(60px, 7vw, 200px);
-  letter-spacing: 5px;
 }

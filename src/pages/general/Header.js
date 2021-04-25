@@ -1,8 +1,11 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../context/ThemeContext';
 import styles from './styles/header.module.css';
 function Header() {
+  const { darkTheme, colors } = useContext(ThemeContext);
   return (
-    <nav className={styles['navbar']}>
+    <nav className={styles['navbar']} style={{ backgroundColor: colors.bg }}>
       <ul className={styles['nav-list']}>
         <Link to="/">
           <li className={[styles['list-item'], styles['home']].join(' ')}>

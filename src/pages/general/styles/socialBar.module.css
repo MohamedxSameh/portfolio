@@ -1,8 +1,6 @@
 .social-bar {
   width: fit-content;
-  position: absolute;
-  right: 20px;
-  top: calc(50% - 125px);
+  margin-top: calc((100vh - 250px) / 2);
 }
 .social-list {
   display: flex;
